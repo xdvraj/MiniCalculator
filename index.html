@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        <div class="">
+            <nav
+                class="text-4xl text-white font-semibold justify-center flex items-center p-5 bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                <h1>THE MINI CALCULATOR</h1>
+            </nav>
+        </div>
+        <div class="flex flex-col items-center mx-auto my-5 rounded-md border-2 border-blue-200 max-w-3xl p-7">
+            <div class="w-full max-w-36 mx-sm mb-4">
+                <input type="text" id="user-input"
+                    class="w-full p-1 border-2 border-blue-100 pl-4 pr-4 font-semibold text-xl text-center focus:outline-none focus:ring-2 focus:ring-violet-500">
+            </div>
+
+            <div class="flex space-x-2 font-semibold text-lg">
+                <button id="addition" class="bg-blue-400 px-6 py-4 border">+</button>
+                <button id="subtraction" class="bg-blue-400  px-6 py-4 border">-</button>
+                <button id="multiply" class="bg-blue-400  px-6 py-4 border">*</button>
+                <button id="division" class="bg-blue-400  px-6 py-4 border">/</button>
+                <button id="clearNum" class="bg-blue-400  px-6 py-4 border">AC</button>
+            </div>
+        </div>
+        <div
+            class="flex flex-col justify-center items-center mx-auto my-5 rounded-md border-2 border-blue-200 max-w-3xl p-7">
+            <div class="w-full mb-4 text-center text-blue-600">
+                <p id="last-number" class="text-xl font-semibold">Last Operation: <span id="current-value">0</span></p>
+            </div>
+            <div class="w-full mb-4 text-center text-blue-600">
+                <p id="result" class="text-xl font-semibold">Result: <span id="result-value">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
